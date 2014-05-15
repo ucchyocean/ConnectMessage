@@ -77,6 +77,11 @@ public class ConnectMessage extends JavaPlugin implements Listener {
             message = messageOther;
         }
 
+        // 設定が無いなら通知しない。
+        if ( message == null || message.equals("") ) {
+            return;
+        }
+
         // 該当プレイヤー名を置き換える
         message = message.replace("%player", event.getPlayer().getName());
 
@@ -108,14 +113,10 @@ public class ConnectMessage extends JavaPlugin implements Listener {
         YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
 
         // 設定値の取得
-        messageBanned = config.getString("banned",
-                "&7%player はBANされているためログインできません。");
-        messageWhitelist = config.getString("whitelist",
-                "&7%player はホワイトリストに含まれていないためログインできません。");
-        messageFull = config.getString("full",
-                "&7%player はサーバーが満員のためログインできません。");
-        messageOther = config.getString("other",
-                "&7%player は他のプラグインによってキックされたためログインできません。");
+        messageBanned = config.getString("banned");
+        messageWhitelist = config.getString("whitelist");
+        messageFull = config.getString("full");
+        messageOther = config.getString("other");
     }
 
     /**
