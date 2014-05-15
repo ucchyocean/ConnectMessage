@@ -85,6 +85,9 @@ public class ConnectMessage extends JavaPlugin implements Listener {
         // 該当プレイヤー名を置き換える
         message = message.replace("%player", event.getPlayer().getName());
 
+        // 該当IPアドレスを置き換える
+        message = message.replace("%address", event.getAddress().toString());
+
         // カラーコードを置き換える
         message = ChatColor.translateAlternateColorCodes('&', message);
 

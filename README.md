@@ -7,10 +7,10 @@ ConnectMessage
 
 ※ コンフィグ：plugins/ConnectMessage/messages.yml に生成されます。
 <pre>
-banned: '&7%player はBANされているためログインできません。'
-whitelist: '&7%player はホワイトリストに含まれていないためログインできません。'
-full: '&7%player はサーバーが満員のためログインできません。'
-other: '&7%player は他のプラグインによってキックされたためログインできません。'
+banned: '&7%player(%address) はBANされているためログインできません。'
+whitelist: '&7%player(%address) はホワイトリストに含まれていないためログインできません。'
+full: '&7%player(%address) はサーバーが満員のためログインできません。'
+other: '&7%player(%address) は他のプラグインによってキックされたためログインできません。'
 </pre>
 
 ※ ライセンス：LGPLv3を適用します。ソースコードを流用する場合は、流用先にもLGPLv3を適用してください。
