@@ -1,0 +1,10 @@
+name: ${project.name}
+version: ${project.version}
+main: com.github.ucchyocean.cm.ConnectMessage
+author: ucchy
+
+permissions:
+  connectmessage.notify:
+    description: Permission to get notify from plugin.
+    default: op
+

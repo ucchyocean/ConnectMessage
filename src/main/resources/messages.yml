@@ -1,0 +1,9 @@
+# ${project.name} v${project.version}
+# @author     ucchy
+# @license    LGPLv3
+# @copyright  Copyright ucchy 2014
+
+banned: '&7%player はBANされているためログインできません。'
+whitelist: '&7%player はホワイトリストに含まれていないためログインできません。'
+full: '&7%player はサーバーが満員のためログインできません。'
+other: '&7%player は他のプラグインによってキックされたためログインできません。'
